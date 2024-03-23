@@ -475,12 +475,14 @@ a.product__text {
 }
 
 .product-form__buttons .product-form__submit {
-  border:1px solid #9B0202;
+  border: 1px solid #9B0202;
   text-transform: uppercase;
-  color: #9B0202;
-  font-size:30px;
+  color: #9b0202;
+  font-size: 22px;
   line-height: 45px;
-  letter-spacing: 0;
+  padding: 2px 13px;
+  font-family: 'Open Sans';
+  margin-bottom: 5px;
 }
 
 .product-form__buttons .product-form__submit.button:after{
@@ -488,12 +490,14 @@ a.product__text {
 }
 
 .product-form__buttons .shopify-payment-button .shopify-payment-button__button{
-  background-color: #9B0202;
-  font-size:30px;
+  background-color: #9b0202;
+  font-size: 22px;
   line-height: 45px;
   padding: 0;
-  color:#ffffff;
+  color: #fff;
   text-transform: uppercase;
+  padding: 2px 20px;
+  font-family: 'Open Sans';
 }
 
 .product--no-media .product__info-container > modal-opener {
