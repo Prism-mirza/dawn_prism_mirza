@@ -285,6 +285,7 @@ a.product__text {
   margin-bottom: 0.5rem;
 }
 
+.product__info-container .vendor_text,
 .product .price--sold-out .price__badge-sale {
   display: none;
 }
