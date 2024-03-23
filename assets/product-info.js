@@ -38,6 +38,7 @@ if (!customElements.get('product-info')) {
       }
 
       setQuantityBoundries() {
+        console.log('setQuantityBoundries');
         labelBuilder();
         const data = {
           cartQuantity: this.input.dataset.cartQuantity ? parseInt(this.input.dataset.cartQuantity) : 0,
