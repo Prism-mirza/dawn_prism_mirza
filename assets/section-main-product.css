@@ -234,8 +234,24 @@
   margin: 2.5rem 0;
 }
 
-.product__info-container {
-  
+.product__info-container .product-form{
+  margin-bottom: 0;
+}
+
+.delivery_info_metaField{
+  text-align: center;
+  font-weight: 600;
+  margin-top: 10px;
+  font-family: 'Open sans';
+}
+
+.fans_shipping_info_metaField{
+  font-family: 'Open sans';
+  color: #7c7c7c;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 15px;
 }
 
 .product__text {
