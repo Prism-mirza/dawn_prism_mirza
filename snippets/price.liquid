@@ -90,7 +90,7 @@
       </span>
       <span class="voucher_price">
         {%- 
-          assign voucherDiscount = money_price | minus: 100
+          assign voucherDiscount = 100 | minus: money_price
 
          -%}
          VP: {{ voucherDiscount }}
