@@ -256,6 +256,13 @@ a.product__text {
   margin-bottom: 1.5rem;
 }
 
+.product__title h1{
+  font-size:35px;
+  line-height: 42px;
+  color: #1E1E1E;
+  font-family: 'Open Sans';
+}
+
 .product__title > * {
   margin: 0;
 }
