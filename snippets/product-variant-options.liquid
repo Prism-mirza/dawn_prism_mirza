@@ -96,7 +96,7 @@
         class="disabled"
       {% endif %}
     >
-    <label for="{{ input_id }}">
+    <label for="{{ input_id }}" class="variant_value_{{ value | replace: ' ', '_' | downcase }}">
       {{ value -}}
       {{ label_unavailable }}
     </label>
