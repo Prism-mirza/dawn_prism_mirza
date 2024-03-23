@@ -574,10 +574,18 @@ a.product__text {
     max-width: 600px;
     position: absolute;
     right: 0;
+    min-height: 516px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .product:not(.product--columns) .thumbnail_media_gallery .product__media-item:first-child .product-media-container{
     border:none !important;
+  }
+
+  .product:not(.product--columns) .thumbnail_media_gallery .product__media-item:not(:first-child) .product-media-container{
+    border:1px solid #000;
   }
 
   .product:not(.product--columns) .thumbnail_media_gallery .product__media-item {
