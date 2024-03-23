@@ -79,6 +79,20 @@
   flex-wrap: wrap;
 }
 
+.product .price__container{
+  margin-top: 2.5px;
+}
+
+.price__container .price-item{
+  font-family: 'Open Sans';
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 45px;
+  text-align: left;
+  color: #9B0202;
+  letter-spacing: 0;
+}
+
 .price--center {
   display: initial;
   justify-content: center;
