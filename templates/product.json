@@ -15,6 +15,14 @@
           "settings": {
           }
         },
+        "inventory_Nckme6": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 5,
+            "show_inventory_quantity": true
+          }
+        },
         "judge_me_reviews_preview_badge_XijCfz": {
           "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
@@ -59,6 +67,7 @@
       "block_order": [
         "vendor",
         "title",
+        "inventory_Nckme6",
         "judge_me_reviews_preview_badge_XijCfz",
         "price",
         "variant_picker",
