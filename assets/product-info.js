@@ -103,7 +103,7 @@ if (!customElements.get('product-info')) {
   );
 
   function label_updater(){
-    //console.log('label_updater');
+    console.log('label_updater');
     var price__sale = parseInt(document.querySelector('.price__sale .price-item').textContent.replace("$", ""));
     var cutoff_price = parseInt(document.querySelector('.cutoff_Price .price-item').textContent.replace("$", ""));
 
@@ -134,10 +134,10 @@ if (!customElements.get('product-info')) {
   }
 
   function labelclickConfig(){
+    console.log('labelclickConfig');
     var variant_selects = document.querySelectorAll('variant-selects fieldset label');
     variant_selects.forEach(function(vslabel){
       //console.log('vslabel config : ', vslabel);
-
       vslabel.addEventListener('click', function(){
         //console.log('label clicked');
         setTimeout(() => {
