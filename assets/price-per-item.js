@@ -17,6 +17,7 @@ if (!customElements.get('price-per-item')) {
       variantIdChangedUnsubscriber = undefined;
 
       connectedCallback() {
+        console.log('connectedCallback');
         var variant_selects = document.querySelectorAll('.variant-selects .fieldset label');
         variant_selects.forEach(function(vslabel){
           vslabel.addEventListener('click', function(){
@@ -66,6 +67,8 @@ if (!customElements.get('price-per-item')) {
       }
 
       updatePricePerItem(updatedCartQuantity) {
+        console.log('updatePricePerItem');
+
         if (this.input) {
           this.enteredQty = parseInt(this.input.value);
           this.step = parseInt(this.input.step)
@@ -92,6 +95,8 @@ if (!customElements.get('price-per-item')) {
       }
 
       getVolumePricingArray() {
+        console.log('getVolumePricingArray');
+
         const volumePricing = document.getElementById(`Volume-${this.dataset.sectionId || this.dataset.variantId}`);
         this.qtyPricePairs = [];
 
