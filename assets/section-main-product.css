@@ -546,6 +546,7 @@ a.product__text {
   .product:not(.product--columns) .thumbnail_media_gallery{
     display: flex;
     flex-flow: column;
+    max-width: 156px;
   }
 
   .product:not(.product--columns) .product__media-list .product__media-item:first-child,
@@ -557,6 +558,7 @@ a.product__text {
 
   .product:not(.product--columns) .thumbnail_media_gallery .product__media-item {
     max-width: 156px;
+    width: 156px;
     max-height: 98px;
   }
 
