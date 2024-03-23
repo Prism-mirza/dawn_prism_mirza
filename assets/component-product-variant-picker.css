@@ -111,9 +111,9 @@ variant-selects {
   border:1px solid #6F000A;
 }
 
-.product-form__input--pill label.variant_value_matte_black,
-.product-form__input--pill label.variant_value_silver,
-.product-form__input--pill label.variant_value_brown{
+.product-form__input--pill input[type='radio'] + label.variant_value_matte_black,
+.product-form__input--pill input[type='radio'] + label.variant_value_silver,
+.product-form__input--pill input[type='radio'] + label.variant_value_brown{
   width: 47.67px;
   height: 43px;
   padding:3px;
