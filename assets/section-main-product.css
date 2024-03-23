@@ -546,11 +546,13 @@ a.product__text {
   .product:not(.product--columns) .product__media-list .product__media-item:first-child,
   .product:not(.product--columns) .product__media-list .product__media-item--full {
     width: 100%;
-    max-width: 100%;
+    max-width: 156px;
+    max-height: 98px;
   }
 
   .product:not(.product--columns) .product__media-list .thumbnail_media{
     max-width: 156px;
+    max-height: 98px;
   }
 
   .product__modal-opener .product__media-icon {
