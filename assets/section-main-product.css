@@ -57,7 +57,11 @@
     max-width: 65%;
     max-width: 756px;
     width: calc(65% - var(--grid-desktop-horizontal-spacing) / 2);
-    max-height: 550px;
+  }
+
+  .product--large:not(.product--no-media) .product__media-wrapper > media-gallery{
+    height: 550px;
+    display: block;
   }
 
   .product--large:not(.product--no-media) .product__info-wrapper {
