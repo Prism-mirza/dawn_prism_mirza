@@ -143,7 +143,7 @@ if (!customElements.get('product-info')) {
         setTimeout(() => {
           label_updater();
           labelclickConfig();
-        }, 1000);
+        }, 500);
       });
     });
   }
