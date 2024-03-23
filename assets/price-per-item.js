@@ -1,6 +1,4 @@
 if (!customElements.get('price-per-item')) {
-  console.log('customElements price-per-item');
-
   customElements.define(
     'price-per-item',
     class PricePerItem extends HTMLElement {
@@ -19,13 +17,6 @@ if (!customElements.get('price-per-item')) {
       variantIdChangedUnsubscriber = undefined;
 
       connectedCallback() {
-        console.log('connectedCallback');
-        var variant_selects = document.querySelectorAll('.variant-selects .fieldset label');
-        variant_selects.forEach(function(vslabel){
-          vslabel.addEventListener('click', function(){
-            console.log('label clicked');
-          });
-        });
         // Update variantId if variant is switched on product page
         this.variantIdChangedUnsubscriber = subscribe(PUB_SUB_EVENTS.variantChange, (event) => {
           this.variantId = event.data.variant.id.toString();
@@ -69,8 +60,6 @@ if (!customElements.get('price-per-item')) {
       }
 
       updatePricePerItem(updatedCartQuantity) {
-        console.log('updatePricePerItem');
-
         if (this.input) {
           this.enteredQty = parseInt(this.input.value);
           this.step = parseInt(this.input.step)
@@ -97,8 +86,6 @@ if (!customElements.get('price-per-item')) {
       }
 
       getVolumePricingArray() {
-        console.log('getVolumePricingArray');
-
         const volumePricing = document.getElementById(`Volume-${this.dataset.sectionId || this.dataset.variantId}`);
         this.qtyPricePairs = [];
 
