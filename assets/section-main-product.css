@@ -281,6 +281,12 @@ a.product__text {
   letter-spacing: 0;
 }
 
+.main_product_section .product__inventory .product__inventory_additional_info{
+  position: relative;
+  left: -2px;
+  top: -1px;
+}
+
 .main_product_section .product__inventory svg:nth-child(1){
   display: none;
 }
