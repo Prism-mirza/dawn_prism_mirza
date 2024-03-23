@@ -1,4 +1,5 @@
 if (!customElements.get('price-per-item')) {
+  console.log('trigger price per item');
   customElements.define(
     'price-per-item',
     class PricePerItem extends HTMLElement {
