@@ -59,10 +59,6 @@ if (!customElements.get('product-info')) {
         publish(PUB_SUB_EVENTS.quantityUpdate, undefined);
       }
 
-      discount_calc(){
-        console.log('discount_calc');
-      }
-
       fetchQuantityRules() {
 
         if (!this.currentVariant || !this.currentVariant.value) return;
@@ -104,4 +100,10 @@ if (!customElements.get('product-info')) {
       }
     }
   );
+
+  function discount_calc(){
+    console.log('discount_calc');
+  }
+
+  
 }
