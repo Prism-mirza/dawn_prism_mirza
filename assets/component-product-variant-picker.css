@@ -74,7 +74,7 @@ variant-selects {
   color: rgb(var(--color-foreground));
   display: inline-block;
   margin: 0.7rem 0.5rem 0.2rem 0;
-  padding: 1rem 2rem;
+  padding: 10px 14px;
   font-size: 1.4rem;
   letter-spacing: 0.1rem;
   line-height: 1;
@@ -102,8 +102,9 @@ variant-selects {
 }
 
 .product-form__input--pill input[type='radio']:checked + label {
-  background-color: rgb(var(--color-foreground));
-  color: rgb(var(--color-background));
+  background-color: #fff;
+  color: #6F000A;
+  border:1px solid #6F000A;
 }
 
 @media screen and (forced-colors: active) {
