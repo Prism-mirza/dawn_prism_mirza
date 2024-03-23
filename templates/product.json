@@ -100,17 +100,10 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
-    },
-    "1711183230ee9f8def": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
     "main",
-    "related-products",
-    "1711183230ee9f8def"
+    "related-products"
   ]
 }
