@@ -15,7 +15,7 @@ if (!customElements.get('product-info')) {
 
       connectedCallback() {
         console.log('connectedCallback product-info');
-        //discount_calc();
+        discount_calc();
 
         var variant_selects = document.querySelectorAll('variant-selects fieldset label');
         variant_selects.forEach(function(vslabel){
@@ -23,6 +23,7 @@ if (!customElements.get('product-info')) {
 
           vslabel.addEventListener('click', function(){
             console.log('label clicked');
+            discount_calc();
           });
         });
 
