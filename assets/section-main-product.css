@@ -501,8 +501,9 @@ a.product__text {
 }
 
 .product-form__buttons {
-  max-width: 44rem;
+  max-width: 100%;
 }
+
 
 .product-form__buttons .product-form__submit {
   border: 1px solid #9B0202;
@@ -727,7 +728,7 @@ a.product__text {
   .product:not(.product--columns) .thumbnail_media_gallery .product__media-item:first-child .product-media-container{
     border:none !important;
   }
-  
+
   @media screen and (max-width:1220px){
     .product:not(.product--columns) .product__media-list .product__media-item:first-child{
       max-width: 79%;;

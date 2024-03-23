@@ -88,6 +88,13 @@
       <span class="price-item price-item--sale price-item--last">
         {{ money_price }}
       </span>
+      <span class="voucher_price">
+        {%- 
+          assign voucherDiscount = money_price | minus: 100
+
+         -%}
+         VP: {{ voucherDiscount }}
+      </span>
       {%- unless product.price_varies == false and product.compare_at_price_varies %}
         <div class="cutoff_Price">
           <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
