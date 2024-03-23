@@ -14,7 +14,11 @@ if (!customElements.get('product-info')) {
 
       connectedCallback() {
         console.log('connectedCallback product info');
+        document.addEventListener('variant:change', function(evt) {
+          console.log('variantchange product info');
 
+          console.log(evt.detail.variant);
+        });
         if (!this.input) return;
         this.quantityForm = this.querySelector('.product-form__quantity');
         if (!this.quantityForm) return;

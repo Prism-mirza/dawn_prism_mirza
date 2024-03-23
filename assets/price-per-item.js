@@ -17,8 +17,6 @@ if (!customElements.get('price-per-item')) {
       variantIdChangedUnsubscriber = undefined;
 
       connectedCallback() {
-        console.log('connectedCallback price per item');
-
         // Update variantId if variant is switched on product page
         this.variantIdChangedUnsubscriber = subscribe(PUB_SUB_EVENTS.variantChange, (event) => {
           this.variantId = event.data.variant.id.toString();
