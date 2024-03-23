@@ -259,6 +259,32 @@ a.product__text {
   font-size: 13.5px;
 }
 
+.main_product_section .product__inventory{
+  font-family: 'Open Sans';
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #CE7A2C;
+  margin-top: 5px;
+  padding-left: 12px;
+  position: relative;
+}
+
+.main_product_section .product__inventory svg{
+  display: none;
+}
+
+.main_product_section .product__inventory:before{
+  content:'';
+  width:9.69px;
+  height: 9.69px;
+  background-color:#CE7A2C;
+  border-radius:100%;
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+
 .product__title {
   word-break: break-word;
   margin-bottom: 0;
