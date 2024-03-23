@@ -35,6 +35,10 @@
   if target == product and product.price_varies
     assign money_price = 'products.product.price.from_price_html' | t: price: money_price
   endif
+
+  assign pricewocur1 = product.price | money_without_currency
+  assign voucherDiscount =  pricewocur1 | minus: 100
+
 -%}
 
 <div
@@ -89,10 +93,7 @@
         {{ money_price }}
       </span>
       <span class="voucher_price_wrapper">
-          {%- 
-            assign pricewocur1 = product.price | money_without_currency
-            assign voucherDiscount =  pricewocur1 | minus: 100
-         -%}
+
 
          PC: {{ pricewocur1 }}
          <span class="voucher_text">${{ voucherDiscount  }}</span>
