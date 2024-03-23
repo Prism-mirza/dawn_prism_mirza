@@ -102,6 +102,9 @@
   background-position: 3px 7px;
   background-repeat: no-repeat;
   padding: 5px 4px 5px 28px;
+  position: relative;
+  left: -4px;
+  top: -5px;
 }
 
 .voucher_price_wrapper .voucher_text{
