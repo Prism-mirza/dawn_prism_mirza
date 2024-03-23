@@ -30,7 +30,6 @@ variant-selects {
   line-height: 19.07px;
   letter-spacing: 0;
   color: #000000;
-  margin-left: 2px;
 }
 
 .product-form__input input[type='radio'] {
@@ -195,6 +194,14 @@ variant-selects {
   color: #000;
   letter-spacing: 0;
   margin-bottom: 15px;
+}
+
+.product .advisory_metaField{
+  color:#9B0202;
+  font-size: 11px;
+  font-family: 'Open Sans';
+  margin: 20px 0;
+  letter-spacing: 0;
 }
 
 @media screen and (min-width: 750px) {
