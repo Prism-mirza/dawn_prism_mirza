@@ -101,10 +101,11 @@
   background-size: 20px 20px;
   background-position: left center;
   background-repeat: no-repeat;
+  padding: 5px 0 5px 24px;
 }
 
 .voucher_price_wrapper .voucher_text{
-  
+
 }
 
 .price--center {
