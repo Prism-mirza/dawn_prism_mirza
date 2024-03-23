@@ -38,6 +38,7 @@ if (!customElements.get('product-info')) {
       }
 
       setQuantityBoundries() {
+        discount_calc();
         const data = {
           cartQuantity: this.input.dataset.cartQuantity ? parseInt(this.input.dataset.cartQuantity) : 0,
           min: this.input.dataset.min ? parseInt(this.input.dataset.min) : 1,
@@ -97,6 +98,21 @@ if (!customElements.get('product-info')) {
       }
     }
   );
+
+  function discount_calc(){
+    console.log('discount_calc');
+    var price__sale = parseInt(document.querySelector('.price__sale .price-item').textContent.replace("$", ""));
+    var cutoff_price = parseInt(document.querySelector('.cutoff_Price .price-item').textContent.replace("$", ""));
+
+    console.log('price__sale: '+ price__sale);
+    console.log('cutoff_price: '+ cutoff_price);
+
+    var disc_cal = cutoff_price / (price__sale * 100);
+
+    console.log('disc_cal: '+ disc_cal);
+
+
+  }
 
 
 
