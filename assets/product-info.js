@@ -19,6 +19,8 @@ if (!customElements.get('product-info')) {
 
         var variant_selects = document.querySelectorAll('variant-selects fieldset label');
         variant_selects.forEach(function(vslabel){
+          console.log('vslabel config : ', vslabel);
+
           vslabel.addEventListener('click', function(){
             console.log('label clicked');
           });
