@@ -251,6 +251,14 @@ a.product__text {
   padding-top: 15.33px;
 }
 
+.main_product_section .jdgm-widget .jdgm-star{
+  margin-top: -4px;
+}
+
+.main_product_section .jdgm-widget .jdgm-star{
+  font-size: 13.5px;
+}
+
 .product__title {
   word-break: break-word;
   margin-bottom: 0;
