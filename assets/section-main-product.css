@@ -60,7 +60,7 @@
   }
 
   .product--large:not(.product--no-media) .product__media-wrapper > media-gallery{
-    height: 550px;
+    height: 545px;
     display: block;
   }
 
