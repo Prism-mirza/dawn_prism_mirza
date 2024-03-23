@@ -128,11 +128,7 @@ if (!customElements.get('product-info')) {
       form_label.textContent = form_input_name +': '+ form_input_value;
 
     });
-
   }
-
-
-
 }
 
 console.log('chaling');
