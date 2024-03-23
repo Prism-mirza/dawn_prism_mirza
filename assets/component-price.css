@@ -93,6 +93,13 @@
   letter-spacing: 0;
 }
 
+.voucher_price{
+  background: #7A0001;
+  border-radius: 5px;
+  
+}
+
+
 .price--center {
   display: initial;
   justify-content: center;
