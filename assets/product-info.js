@@ -15,17 +15,8 @@ if (!customElements.get('product-info')) {
 
       connectedCallback() {
         console.log('connectedCallback product-info');
-        discount_calc();
-
-        var variant_selects = document.querySelectorAll('variant-selects fieldset label');
-        variant_selects.forEach(function(vslabel){
-          console.log('vslabel config : ', vslabel);
-
-          vslabel.addEventListener('click', function(){
-            console.log('label clicked');
-            discount_calc();
-          });
-        });
+        label_updater();
+        labelclickConfig();
 
         if (!this.input) return;
         this.quantityForm = this.querySelector('.product-form__quantity');
@@ -111,8 +102,8 @@ if (!customElements.get('product-info')) {
     }
   );
 
-  function discount_calc(){
-    console.log('discount_calc');
+  function label_updater(){
+    console.log('label_updater');
     var price__sale = parseInt(document.querySelector('.price__sale .price-item').textContent.replace("$", ""));
     var cutoff_price = parseInt(document.querySelector('.cutoff_Price .price-item').textContent.replace("$", ""));
 
@@ -142,7 +133,18 @@ if (!customElements.get('product-info')) {
 
   }
 
+  function labelclickConfig(){
+    var variant_selects = document.querySelectorAll('variant-selects fieldset label');
+    variant_selects.forEach(function(vslabel){
+      console.log('vslabel config : ', vslabel);
 
+      vslabel.addEventListener('click', function(){
+        console.log('label clicked');
+        label_updater();
+        labelclickConfig();
+      });
+    });
+  }
 
 }
 
