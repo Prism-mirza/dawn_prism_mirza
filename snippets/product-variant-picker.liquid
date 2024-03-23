@@ -10,6 +10,12 @@
   {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
 {% endcomment %}
 {%- unless product.has_only_default_variant -%}
+
+  {% if product.metafields.custom.variations_title != blank %}
+    <div class="variationTitle_metaField">
+      {{ product.metafields.custom.variations_title }}
+    </div>
+  {% endif %}
   <variant-selects
     id="variant-selects-{{ section.id }}"
     class="no-js-hidden"
