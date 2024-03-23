@@ -60,7 +60,7 @@
   }
 
   .product--large:not(.product--no-media) .product__info-wrapper {
-    padding: 0 0 0 30px;
+    padding: 0 0 0 28px;
     max-width: 35%;
     width: calc(35% - var(--grid-desktop-horizontal-spacing) / 2);
   }
@@ -566,6 +566,8 @@ a.product__text {
     flex-flow: wrap;
     max-width: 100%;
     flex-direction: column;
+    row-gap: 5px;
+    margin-top: 38px;
   }
 
   .product:not(.product--columns) .product__media-list .product__media-item:first-child,
