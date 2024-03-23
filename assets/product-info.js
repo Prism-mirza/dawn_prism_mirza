@@ -114,7 +114,7 @@ if (!customElements.get('product-info')) {
     var allfieldset = document.querySelectorAll('variant-selects fieldset');
     allfieldset.forEach(function(fieldset){
       var form_label = fieldset.querySelector('legend.form__label');
-      //console.log('form_label: ', form_label);
+      console.log('form_label: ', form_label);
 
       var form_checked_input = fieldset.querySelector('input:checked');
       var form_input_value = form_checked_input.value;
