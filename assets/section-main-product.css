@@ -545,21 +545,22 @@ a.product__text {
 
   .product:not(.product--columns) .thumbnail_media_gallery{
     display: flex;
-    flex-flow: column;
-    max-width: 156px;
+    flex-flow: wrap;
+    max-width: 100%;
+    flex-direction: column;
   }
 
   .product:not(.product--columns) .product__media-list .product__media-item:first-child,
   .product:not(.product--columns) .product__media-list .product__media-item--full {
     width: 100%;
-    max-width: 156px;
-    max-height: 98px;
+    max-width: 600px;
+    position: absolute;
+    right: 0;
   }
 
   .product:not(.product--columns) .thumbnail_media_gallery .product__media-item {
     max-width: 156px;
     width: 156px;
-    max-height: 98px;
   }
 
   .product__modal-opener .product__media-icon {
