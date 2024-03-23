@@ -136,3 +136,4 @@ if (!customElements.get('product-info')) {
 }
 
 alert('chaling');
+labelBuilder();
