@@ -133,3 +133,9 @@ if (!customElements.get('product-info')) {
 
 
 }
+
+jQuery('#shopify-section-product-template').on('theme:variants:changed', function(evt, variantObj){
+
+  console.log('theme event for '+ variantObj.sku); // limited view of variant.
+  console.log(variantObj);
+});
