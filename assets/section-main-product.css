@@ -247,6 +247,10 @@ a.product__text {
   text-transform: uppercase;
 }
 
+.main_product_section{
+  padding-top: 15.33px;
+}
+
 .product__title {
   word-break: break-word;
   margin-bottom: 1.5rem;
