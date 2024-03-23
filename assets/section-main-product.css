@@ -242,7 +242,9 @@
   text-align: center;
   font-weight: 600;
   margin-top: 10px;
-  font-family: 'Open sans';
+  font-family: Open sans;
+  letter-spacing: 0;
+  margin-bottom: 18px;
 }
 
 .fans_shipping_info_metaField{
@@ -252,6 +254,12 @@
   font-weight: 400;
   margin: 0;
   line-height: 15px;
+  letter-spacing: 0;
+}
+
+.fans_shipping_info_metaField a{
+  color: #000;
+  text-decoration: none;
 }
 
 .product__text {
