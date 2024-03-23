@@ -107,7 +107,7 @@ if (!customElements.get('product-info')) {
 }
 
 
-labelBuilder(){ 
+function labelBuilder(){ 
   console.log('labelBuilder');
   var price__sale = parseInt(document.querySelector('.price__sale .price-item').textContent.replace("$", ""));
   var cutoff_price = parseInt(document.querySelector('.cutoff_Price .price-item').textContent.replace("$", ""));
