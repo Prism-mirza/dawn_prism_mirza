@@ -483,6 +483,10 @@ a.product__text {
   letter-spacing: 0;
 }
 
+.product-form__buttons .product-form__submit.button:after{
+  box-shadow:none;
+}
+
 .product-form__buttons .shopify-payment-button .shopify-payment-button__button{
   background-color: #9B0202;
   font-size:30px;
