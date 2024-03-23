@@ -267,7 +267,8 @@ a.product__text {
   margin: 0;
 }
 
-.product__title ~ .shopify-app-block{
+.product__title ~ .shopify-app-block,
+.product__info-wrapper .product__inventory{
   margin: 0;
 }
 
