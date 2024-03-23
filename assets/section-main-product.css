@@ -550,6 +550,19 @@ a.product__text {
     max-width: 600px;
   }
 
+  .product:not(.product--columns) .product__media-list{
+    counter-reset: media_counter;
+  }
+
+  .product:not(.product--columns) .product__media-list .product__media-item:first-child{
+    grid-area: 1;
+  }
+
+  .product:not(.product--columns) .product__media-list .product__media-item:nth-child(n+1){
+    counter-increment: media_counter;
+    grid-area: counter(media_counter);
+  }
+
   .product__modal-opener .product__media-icon {
     opacity: 0;
   }
