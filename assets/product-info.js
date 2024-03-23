@@ -134,8 +134,7 @@ if (!customElements.get('product-info')) {
 
 }
 
-var original_selectCallback = window.selectCallback;
-   window.selectCallback = function(variant, selector) {
-    original_selectCallback(variant, selector); // call the original function
-    myCustomHandler(variant); // called with the full jsonified variant object.
-};
+var thumbnail_media_gallery = document.querySelector('.thumbnail_media_gallery');
+thumbnail_media_gallery.addEventListener('change',function(){
+  console.log('thumbnail_media_gallery');
+});
