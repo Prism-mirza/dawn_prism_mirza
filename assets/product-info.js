@@ -115,6 +115,7 @@ if (!customElements.get('product-info')) {
     allfieldset.forEach(function(fieldset){
       var form_label = fieldset.querySelector('legend.form__label');
       console.log('form_label: ', form_label);
+      console.log('form_label: ', form_label);
 
     });
   }
