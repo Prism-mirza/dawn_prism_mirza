@@ -67,11 +67,10 @@ variant-selects {
 
 /* Custom styles for Pill display type */
 .product-form__input--pill input[type='radio'] + label {
-  border: var(--variant-pills-border-width) solid rgba(var(--color-foreground), var(--variant-pills-border-opacity));
+  border: 1px solid #D1D1D1;
   background-color: rgb(var(--color-background));
-  color: rgba(var(--color-foreground));
+  color: #DBD2D1;
   border-radius: var(--variant-pills-radius);
-  color: rgb(var(--color-foreground));
   display: inline-block;
   margin: 0.7rem 0.5rem 0.2rem 0;
   padding: 10px 14px;
@@ -82,6 +81,11 @@ variant-selects {
   transition: border var(--duration-short) ease;
   cursor: pointer;
   position: relative;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.07px;
+  letter-spacing: 0;
 }
 
 .product-form__input--pill input[type='radio'] + label:before {
