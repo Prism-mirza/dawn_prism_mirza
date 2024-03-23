@@ -14,11 +14,6 @@ if (!customElements.get('product-info')) {
 
       connectedCallback() {
         console.log('connectedCallback product info');
-        document.addEventListener('variant:change', function(evt) {
-          console.log('variantchange product info');
-
-          console.log(evt.detail.variant);
-        });
         if (!this.input) return;
         this.quantityForm = this.querySelector('.product-form__quantity');
         if (!this.quantityForm) return;
@@ -35,6 +30,8 @@ if (!customElements.get('product-info')) {
       }
 
       disconnectedCallback() {
+        console.log('disconnectedCallback product info');
+
         if (this.cartUpdateUnsubscriber) {
           this.cartUpdateUnsubscriber();
         }
@@ -44,6 +41,8 @@ if (!customElements.get('product-info')) {
       }
 
       setQuantityBoundries() {
+        console.log('setQuantityBoundries product info');
+
         const data = {
           cartQuantity: this.input.dataset.cartQuantity ? parseInt(this.input.dataset.cartQuantity) : 0,
           min: this.input.dataset.min ? parseInt(this.input.dataset.min) : 1,
@@ -63,6 +62,8 @@ if (!customElements.get('product-info')) {
       }
 
       fetchQuantityRules() {
+        console.log('fetchQuantityRules product info');
+
         if (!this.currentVariant || !this.currentVariant.value) return;
         this.querySelector('.quantity__rules-cart .loading__spinner').classList.remove('hidden');
         fetch(`${this.dataset.url}?variant=${this.currentVariant.value}&section_id=${this.dataset.section}`)
@@ -83,6 +84,8 @@ if (!customElements.get('product-info')) {
       }
 
       updateQuantityRules(sectionId, html) {
+        console.log('updateQuantityRules product info');
+
         const quantityFormUpdated = html.getElementById(`Quantity-Form-${sectionId}`);
         const selectors = ['.quantity__input', '.quantity__rules', '.quantity__label'];
         for (let selector of selectors) {
