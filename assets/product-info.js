@@ -103,16 +103,16 @@ if (!customElements.get('product-info')) {
   );
 
   function label_updater(){
-    console.log('label_updater');
+    //console.log('label_updater');
     var price__sale = parseInt(document.querySelector('.price__sale .price-item').textContent.replace("$", ""));
     var cutoff_price = parseInt(document.querySelector('.cutoff_Price .price-item').textContent.replace("$", ""));
 
-    console.log('price__sale: '+ price__sale);
-    console.log('cutoff_price: '+ cutoff_price);
+    //console.log('price__sale: '+ price__sale);
+    //console.log('cutoff_price: '+ cutoff_price);
 
     var disc_cal = cutoff_price / (price__sale * 100);
 
-    console.log('disc_cal: '+ disc_cal);
+    //console.log('disc_cal: '+ disc_cal);
 
     var allfieldset = document.querySelectorAll('variant-selects fieldset');
     allfieldset.forEach(function(fieldset){
@@ -123,8 +123,8 @@ if (!customElements.get('product-info')) {
       var form_input_value = form_checked_input.value;
       var form_input_name = form_checked_input.getAttribute('name');
 
-      console.log('form_checked_input: ', form_input_value);
-      console.log('form_input_name: ', form_input_name);
+      //console.log('form_checked_input: ', form_input_value);
+      //console.log('form_input_name: ', form_input_name);
 
       form_label.textContent = form_input_name +': '+ form_input_value;
 
@@ -136,12 +136,12 @@ if (!customElements.get('product-info')) {
   function labelclickConfig(){
     var variant_selects = document.querySelectorAll('variant-selects fieldset label');
     variant_selects.forEach(function(vslabel){
-      console.log('vslabel config : ', vslabel);
+      //console.log('vslabel config : ', vslabel);
 
       vslabel.addEventListener('click', function(){
-        console.log('label clicked');
-        label_updater();
+        //console.log('label clicked');
         setTimeout(() => {
+          label_updater();
           labelclickConfig();
         }, 1000);
       });
