@@ -1,4 +1,6 @@
 if (!customElements.get('product-info')) {
+  console.log('customElements product info');
+
   customElements.define(
     'product-info',
     class ProductInfo extends HTMLElement {
@@ -13,6 +15,8 @@ if (!customElements.get('product-info')) {
       variantChangeUnsubscriber = undefined;
 
       connectedCallback() {
+        console.log('connectedCallback');
+
         if (!this.input) return;
         this.quantityForm = this.querySelector('.product-form__quantity');
         if (!this.quantityForm) return;
@@ -29,6 +33,8 @@ if (!customElements.get('product-info')) {
       }
 
       disconnectedCallback() {
+        console.log('disconnectedCallback');
+
         if (this.cartUpdateUnsubscriber) {
           this.cartUpdateUnsubscriber();
         }
