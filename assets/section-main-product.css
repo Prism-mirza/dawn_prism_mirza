@@ -259,6 +259,14 @@ a.product__text {
   font-size: 13.5px;
 }
 
+.main_product_section .jdgm-widget .jdgm-prev-badge__text{
+  color: #000000;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;  
+}
+
 .main_product_section .product__inventory{
   font-family: 'Open Sans';
   font-size: 12px;
