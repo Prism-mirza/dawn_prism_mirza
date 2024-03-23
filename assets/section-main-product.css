@@ -253,7 +253,7 @@ a.product__text {
 
 .product__title {
   word-break: break-word;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
 }
 
 .product__title h1{
@@ -264,6 +264,10 @@ a.product__text {
 }
 
 .product__title > * {
+  margin: 0;
+}
+
+.product__title ~ .shopify-app-block{
   margin: 0;
 }
 
