@@ -24,6 +24,13 @@ variant-selects {
 
 :is(.product-form__input--pill, .product-form__input--swatch) .form__label {
   margin-bottom: 0.2rem;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.07px;
+  letter-spacing: 0;
+  color: #000000;
+  margin-left: 2px;
 }
 
 .product-form__input input[type='radio'] {
@@ -150,13 +157,14 @@ variant-selects {
   margin: 0.7rem 1.2rem 0.2rem 0;
 }
 
-.variationTitle_metaField{
-  font-family: 'Open Sans';
+.product .variationTitle_metaField{
+  font-family: Open Sans;
   font-size: 18px;
   font-weight: 700;
   line-height: 24.51px;
-  color: #000000;
+  color: #000;
   letter-spacing: 0;
+  margin-bottom: 15px;
 }
 
 @media screen and (min-width: 750px) {
