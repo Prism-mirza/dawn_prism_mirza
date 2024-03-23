@@ -12,35 +12,6 @@ if (!customElements.get('product-info')) {
       cartUpdateUnsubscriber = undefined;
       variantChangeUnsubscriber = undefined;
 
-       labelBuilder(){ 
-        console.log('labelBuilder');
-        var price__sale = parseInt(document.querySelector('.price__sale .price-item').textContent.replace("$", ""));
-        var cutoff_price = parseInt(document.querySelector('.cutoff_Price .price-item').textContent.replace("$", ""));
-    
-        //console.log('price__sale: '+ price__sale);
-        //console.log('cutoff_price: '+ cutoff_price);
-    
-        var disc_cal = cutoff_price / (price__sale * 100);
-    
-        //console.log('disc_cal: '+ disc_cal);
-    
-        var allfieldset = document.querySelectorAll('variant-selects fieldset');
-        allfieldset.forEach(function(fieldset){
-          var form_label = fieldset.querySelector('legend.form__label');
-          console.log('form_label: ', form_label);
-    
-          var form_checked_input = fieldset.querySelector('input:checked');
-          var form_input_value = form_checked_input.value;
-          var form_input_name = form_checked_input.getAttribute('name');
-    
-          //console.log('form_checked_input: ', form_input_value);
-          //console.log('form_input_name: ', form_input_name);
-    
-          form_label.textContent = form_input_name +': '+ form_input_value;
-    
-        });
-      }
-
       connectedCallback() {
         if (!this.input) return;
         this.quantityForm = this.querySelector('.product-form__quantity');
@@ -135,3 +106,32 @@ if (!customElements.get('product-info')) {
 
 }
 
+
+labelBuilder(){ 
+  console.log('labelBuilder');
+  var price__sale = parseInt(document.querySelector('.price__sale .price-item').textContent.replace("$", ""));
+  var cutoff_price = parseInt(document.querySelector('.cutoff_Price .price-item').textContent.replace("$", ""));
+
+  //console.log('price__sale: '+ price__sale);
+  //console.log('cutoff_price: '+ cutoff_price);
+
+  var disc_cal = cutoff_price / (price__sale * 100);
+
+  //console.log('disc_cal: '+ disc_cal);
+
+  var allfieldset = document.querySelectorAll('variant-selects fieldset');
+  allfieldset.forEach(function(fieldset){
+    var form_label = fieldset.querySelector('legend.form__label');
+    console.log('form_label: ', form_label);
+
+    var form_checked_input = fieldset.querySelector('input:checked');
+    var form_input_value = form_checked_input.value;
+    var form_input_name = form_checked_input.getAttribute('name');
+
+    //console.log('form_checked_input: ', form_input_value);
+    //console.log('form_input_name: ', form_input_name);
+
+    form_label.textContent = form_input_name +': '+ form_input_value;
+
+  });
+}
