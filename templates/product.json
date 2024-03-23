@@ -101,7 +101,19 @@
         "padding_bottom": 28
       }
     },
+    "1711183417104de8c4": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
     "171118344221f8e5f6": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1711183230ee9f8def": {
       "type": "apps",
       "settings": {
         "include_margins": true
@@ -111,6 +123,8 @@
   "order": [
     "main",
     "related-products",
-    "171118344221f8e5f6"
+    "1711183417104de8c4",
+    "171118344221f8e5f6",
+    "1711183230ee9f8def"
   ]
 }
