@@ -80,8 +80,6 @@ if (!customElements.get('product-info')) {
       }
 
       updateQuantityRules(sectionId, html) {
-        console.log('updateQuantityRules');
-
         const quantityFormUpdated = html.getElementById(`Quantity-Form-${sectionId}`);
         const selectors = ['.quantity__input', '.quantity__rules', '.quantity__label'];
         for (let selector of selectors) {
@@ -102,7 +100,7 @@ if (!customElements.get('product-info')) {
     }
   );
 
-  function labelBuilder(){
+  function labelBuilder(){ 
     console.log('discount_calc');
     var price__sale = parseInt(document.querySelector('.price__sale .price-item').textContent.replace("$", ""));
     var cutoff_price = parseInt(document.querySelector('.cutoff_Price .price-item').textContent.replace("$", ""));
