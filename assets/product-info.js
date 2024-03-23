@@ -13,6 +13,8 @@ if (!customElements.get('product-info')) {
       variantChangeUnsubscriber = undefined;
 
       connectedCallback() {
+        console.log('connectedCallback product info');
+
         if (!this.input) return;
         this.quantityForm = this.querySelector('.product-form__quantity');
         if (!this.quantityForm) return;
