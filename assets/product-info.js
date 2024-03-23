@@ -135,5 +135,5 @@ if (!customElements.get('product-info')) {
 
 }
 
-alert('chaling');
+console.log('chaling');
 labelBuilder();
