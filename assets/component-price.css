@@ -113,3 +113,22 @@
   text-transform: uppercase;
   color: rgba(var(--color-foreground), 0.7);
 }
+
+.grab_atome_container{
+  display:flex;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color:#000000;
+}
+
+.grab_atome_container .grab_image{
+    width:42.73px;
+    height: 19.98px;
+}
+
+.grab_atome_container .atome_image{
+    width:68.7;
+    height: 15.98px;
+}
