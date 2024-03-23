@@ -133,5 +133,3 @@ if (!customElements.get('product-info')) {
 
 }
 
-console.log('chaling');
-labelBuilder();
