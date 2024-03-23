@@ -108,8 +108,8 @@ if (!customElements.get('product-info')) {
     console.log('price__sale: '+ price__sale);
     console.log('cutoff_price: '+ cutoff_price);
 
-    var disc_cal = price__sale / (cutoff_price * 100);
-    
+    var disc_cal = cutoff_price / (price__sale * 100);
+
     console.log('disc_cal: '+ disc_cal);
 
 
