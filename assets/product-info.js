@@ -13,7 +13,6 @@ if (!customElements.get('product-info')) {
       variantChangeUnsubscriber = undefined;
 
       connectedCallback() {
-        console.log('connectedCallback product info');
         if (!this.input) return;
         this.quantityForm = this.querySelector('.product-form__quantity');
         if (!this.quantityForm) return;
@@ -30,8 +29,6 @@ if (!customElements.get('product-info')) {
       }
 
       disconnectedCallback() {
-        console.log('disconnectedCallback product info');
-
         if (this.cartUpdateUnsubscriber) {
           this.cartUpdateUnsubscriber();
         }
@@ -42,6 +39,7 @@ if (!customElements.get('product-info')) {
 
       setQuantityBoundries() {
         console.log('setQuantityBoundries product info');
+        discount_calc();
 
         const data = {
           cartQuantity: this.input.dataset.cartQuantity ? parseInt(this.input.dataset.cartQuantity) : 0,
@@ -61,8 +59,11 @@ if (!customElements.get('product-info')) {
         publish(PUB_SUB_EVENTS.quantityUpdate, undefined);
       }
 
+      discount_calc(){
+        console.log('discount_calc');
+      }
+
       fetchQuantityRules() {
-        console.log('fetchQuantityRules product info');
 
         if (!this.currentVariant || !this.currentVariant.value) return;
         this.querySelector('.quantity__rules-cart .loading__spinner').classList.remove('hidden');
@@ -84,8 +85,6 @@ if (!customElements.get('product-info')) {
       }
 
       updateQuantityRules(sectionId, html) {
-        console.log('updateQuantityRules product info');
-
         const quantityFormUpdated = html.getElementById(`Quantity-Form-${sectionId}`);
         const selectors = ['.quantity__input', '.quantity__rules', '.quantity__label'];
         for (let selector of selectors) {
