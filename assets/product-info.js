@@ -101,7 +101,7 @@ if (!customElements.get('product-info')) {
   );
 
   function labelBuilder(){
-    //console.log('discount_calc');
+    console.log('discount_calc');
     var price__sale = parseInt(document.querySelector('.price__sale .price-item').textContent.replace("$", ""));
     var cutoff_price = parseInt(document.querySelector('.cutoff_Price .price-item').textContent.replace("$", ""));
 
