@@ -550,24 +550,6 @@ a.product__text {
     max-width: 600px;
   }
 
-  
-  .product:not(.product--columns) .product__media-list{
-    display: grid;
-    grid-template-areas: 
-            "1 1 3"
-            "1 1 4"
-            ". . 5";
-  }
-
-  .product:not(.product--columns) .product__media-list .product__media-item:first-child{
-    grid-area: 1;
-  }
-
-  .product:not(.product--columns) .product__media-list .product__media-item:nth-child(n+1){
-    grid-area: var(--media_counter);
-  }
-
-
   .product__modal-opener .product__media-icon {
     opacity: 0;
   }
