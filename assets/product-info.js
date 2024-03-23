@@ -105,8 +105,8 @@ if (!customElements.get('product-info')) {
     var price__sale = document.querySelector('.price__sale .price-item').textContent.replace("$", "");
     var cutoff_price = document.querySelector('.cutoff_Price .price-item').textContent.replace("$", "");
 
-    console.log('price__sale: '+ price__sale);
-    console.log('cutoff_price: '+ cutoff_price);
+    console.log('price__sale: '+ parseInt(price__sale));
+    console.log('cutoff_price: '+ parseInt(cutoff_price));
 
 
 
