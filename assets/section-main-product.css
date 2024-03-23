@@ -249,6 +249,7 @@ a.product__text {
 
 .main_product_section{
   padding-top: 15.33px;
+  letter-spacing: 0;
 }
 
 .main_product_section .jdgm-widget{
@@ -265,6 +266,7 @@ a.product__text {
   font-size: 14px;
   font-weight: 400;
   line-height: 19.6px;  
+  letter-spacing: 0;
 }
 
 .main_product_section .product__inventory{
@@ -274,8 +276,9 @@ a.product__text {
   line-height: 18px;
   color: #CE7A2C;
   margin-top: 5px;
-  padding-left: 12px;
+  padding-left: 13px;
   position: relative;
+  letter-spacing: 0;
 }
 
 .main_product_section .product__inventory svg:nth-child(1){
@@ -303,6 +306,7 @@ a.product__text {
   line-height: 42px;
   color: #1E1E1E;
   font-family: 'Open Sans';
+  letter-spacing: 0;
 }
 
 .product__title > * {
