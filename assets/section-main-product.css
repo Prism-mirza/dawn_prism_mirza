@@ -550,7 +550,7 @@ a.product__text {
     max-height: 98px;
   }
 
-  .product:not(.product--columns) .product__media-list .thumbnail_media{
+  .product:not(.product--columns) .thumbnail_media_gallery .product__media-item {
     max-width: 156px;
     max-height: 98px;
   }
