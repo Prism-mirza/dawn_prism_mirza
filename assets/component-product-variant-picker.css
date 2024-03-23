@@ -118,6 +118,22 @@ variant-selects {
   height: 43px;
   padding:3px;
   font-size: 0;
+  background-size: 42px 37.39px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.product-form__input--pill input[type='radio'] + label.variant_value_matte_black{
+  background-image:url('https://cdn.shopify.com/s/files/1/0869/2875/2918/files/black_variant.jpg?v=1711199752');
+}
+
+.product-form__input--pill input[type='radio'] + label.variant_value_silver{
+  background-image:url('https://cdn.shopify.com/s/files/1/0869/2875/2918/files/silver_variant.jpg?v=1711199752');
+}
+
+.product-form__input--pill input[type='radio'] + label.variant_value_brown{
+  background-image:url('https://cdn.shopify.com/s/files/1/0869/2875/2918/files/rose_gold_variant_jpg.jpg?v=1711199752');
 }
 
 @media screen and (forced-colors: active) {
