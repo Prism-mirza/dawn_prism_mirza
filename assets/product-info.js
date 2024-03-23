@@ -38,7 +38,6 @@ if (!customElements.get('product-info')) {
       }
 
       setQuantityBoundries() {
-        console.log('setQuantityBoundries product info');
         discount_calc();
 
         const data = {
@@ -103,7 +102,15 @@ if (!customElements.get('product-info')) {
 
   function discount_calc(){
     console.log('discount_calc');
+    var price__sale = document.querySelector('.price__sale .price-item').replace("$", "");
+    var cutoff_price = document.querySelector('.cutoff_Price .price-item').replace("$", "");
+
+    console.log('price__sale: '+ price__sale);
+    console.log('cutoff_price: '+ cutoff_price);
+
+
+
   }
 
-  
+
 }
