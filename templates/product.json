@@ -101,6 +101,22 @@
         "padding_bottom": 28
       }
     },
+    "1711183597cbbcdbb2": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_medals_fnHUpU": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/medals\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_medals_fnHUpU"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "1711183417104de8c4": {
       "type": "apps",
       "blocks": {
@@ -143,6 +159,7 @@
   "order": [
     "main",
     "related-products",
+    "1711183597cbbcdbb2",
     "1711183417104de8c4",
     "171118344221f8e5f6",
     "1711183230ee9f8def"
