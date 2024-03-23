@@ -150,6 +150,15 @@ variant-selects {
   margin: 0.7rem 1.2rem 0.2rem 0;
 }
 
+.variationTitle_metaField{
+  font-family: 'Open Sans';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24.51px;
+  color: #000000;
+  letter-spacing: 0;
+}
+
 @media screen and (min-width: 750px) {
   .product-form__input--swatch .swatch-input__input + .swatch-input__label {
     --swatch-input--size: 2.8rem;
