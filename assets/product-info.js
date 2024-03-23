@@ -114,12 +114,16 @@ if (!customElements.get('product-info')) {
     var allfieldset = document.querySelectorAll('variant-selects fieldset');
     allfieldset.forEach(function(fieldset){
       var form_label = fieldset.querySelector('legend.form__label');
-      console.log('form_label: ', form_label);
+      //console.log('form_label: ', form_label);
 
       var form_checked_input = fieldset.querySelector('input:checked');
-      console.log('form_checked_input: ', form_checked_input.value);
+      var form_input_value = form_checked_input.value;
+      var form_input_name = form_checked_input.getAttribute('name');
 
-      form_label.textContent = form_checked_input.value;
+      console.log('form_checked_input: ', form_input_value);
+      console.log('form_input_name: ', form_input_name);
+
+      form_label.textContent = form_input_name +': '+ form_input_value;
 
 
     });
