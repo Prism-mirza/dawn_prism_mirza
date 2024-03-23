@@ -278,7 +278,7 @@ a.product__text {
   position: relative;
 }
 
-.main_product_section .product__inventory svg{
+.main_product_section .product__inventory svg:nth-child(1){
   display: none;
 }
 
@@ -289,7 +289,7 @@ a.product__text {
   background-color:#CE7A2C;
   border-radius:100%;
   position: absolute;
-  top: 3px;
+  top: 3.5px;
   left: 0;
 }
 
@@ -309,8 +309,7 @@ a.product__text {
   margin: 0;
 }
 
-.product__title ~ .shopify-app-block,
-.product__info-wrapper .product__inventory{
+.product__title ~ .shopify-app-block{
   margin: 0;
 }
 
