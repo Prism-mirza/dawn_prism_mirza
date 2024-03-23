@@ -111,7 +111,12 @@ if (!customElements.get('product-info')) {
 
     console.log('disc_cal: '+ disc_cal);
 
+    var allfieldset = document.querySelectorAll('variant-selects fieldset');
+    allfieldset.forEach(function(fieldset){
+      var form_label = fieldset.querySelector('legend.form__label');
+      console.log('form_label: '+ form_label);
 
+    });
   }
 
 
