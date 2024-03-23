@@ -113,7 +113,3 @@
   text-transform: uppercase;
   color: rgba(var(--color-foreground), 0.7);
 }
-
-.discount_calc:not(.show){
-  display: none;
-}
