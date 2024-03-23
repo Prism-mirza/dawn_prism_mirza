@@ -57,6 +57,13 @@
             "show_gift_card_recipient": true
           }
         },
+        "text_jA8QeE": {
+          "type": "text",
+          "settings": {
+            "text": "Delivers in 2-4 working days",
+            "text_style": "body"
+          }
+        },
         "share": {
           "type": "share",
           "settings": {
@@ -74,6 +81,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "text_jA8QeE",
         "share"
       ],
       "settings": {
