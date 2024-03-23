@@ -89,10 +89,11 @@
         {{ money_price }}
       </span>
       <span class="voucher_price">
-        {%- 
-          assign pricewocur1 = product.price | money_without_currency
-
-          assign voucherDiscount = 100 | minus: money_price
+          {%- 
+            assign pricewocur1 = product.price | money_without_currency
+         -%}
+         {%- 
+            assign voucherDiscount = 100 | minus: money_price
          -%}
          <span class="money_price">PC: {{ pricewocur1 }}</span>
 
