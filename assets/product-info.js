@@ -141,7 +141,9 @@ if (!customElements.get('product-info')) {
       vslabel.addEventListener('click', function(){
         console.log('label clicked');
         label_updater();
-        labelclickConfig();
+        setTimeout(() => {
+          labelclickConfig();
+        }, 1000);
       });
     });
   }
