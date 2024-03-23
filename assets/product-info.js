@@ -1,6 +1,4 @@
 if (!customElements.get('product-info')) {
-  console.log('customElements product info');
-
   customElements.define(
     'product-info',
     class ProductInfo extends HTMLElement {
@@ -15,8 +13,6 @@ if (!customElements.get('product-info')) {
       variantChangeUnsubscriber = undefined;
 
       connectedCallback() {
-        console.log('connectedCallback');
-
         if (!this.input) return;
         this.quantityForm = this.querySelector('.product-form__quantity');
         if (!this.quantityForm) return;
@@ -33,8 +29,6 @@ if (!customElements.get('product-info')) {
       }
 
       disconnectedCallback() {
-        console.log('disconnectedCallback');
-
         if (this.cartUpdateUnsubscriber) {
           this.cartUpdateUnsubscriber();
         }
@@ -44,8 +38,7 @@ if (!customElements.get('product-info')) {
       }
 
       setQuantityBoundries() {
-        console.log('setQuantityBoundries');
-        labelBuilder();
+        discount_calc();
         const data = {
           cartQuantity: this.input.dataset.cartQuantity ? parseInt(this.input.dataset.cartQuantity) : 0,
           min: this.input.dataset.min ? parseInt(this.input.dataset.min) : 1,
@@ -65,7 +58,6 @@ if (!customElements.get('product-info')) {
       }
 
       fetchQuantityRules() {
-        console.log('fetchQuantityRules');
 
         if (!this.currentVariant || !this.currentVariant.value) return;
         this.querySelector('.quantity__rules-cart .loading__spinner').classList.remove('hidden');
@@ -87,8 +79,6 @@ if (!customElements.get('product-info')) {
       }
 
       updateQuantityRules(sectionId, html) {
-        console.log('updateQuantityRules');
-
         const quantityFormUpdated = html.getElementById(`Quantity-Form-${sectionId}`);
         const selectors = ['.quantity__input', '.quantity__rules', '.quantity__label'];
         for (let selector of selectors) {
@@ -109,35 +99,37 @@ if (!customElements.get('product-info')) {
     }
   );
 
+  function discount_calc(){
+    console.log('discount_calc');
+    var price__sale = parseInt(document.querySelector('.price__sale .price-item').textContent.replace("$", ""));
+    var cutoff_price = parseInt(document.querySelector('.cutoff_Price .price-item').textContent.replace("$", ""));
 
-}
+    console.log('price__sale: '+ price__sale);
+    console.log('cutoff_price: '+ cutoff_price);
+
+    var disc_cal = cutoff_price / (price__sale * 100);
+
+    console.log('disc_cal: '+ disc_cal);
+
+    var allfieldset = document.querySelectorAll('variant-selects fieldset');
+    allfieldset.forEach(function(fieldset){
+      var form_label = fieldset.querySelector('legend.form__label');
+      //console.log('form_label: ', form_label);
+
+      var form_checked_input = fieldset.querySelector('input:checked');
+      var form_input_value = form_checked_input.value;
+      var form_input_name = form_checked_input.getAttribute('name');
+
+      console.log('form_checked_input: ', form_input_value);
+      console.log('form_input_name: ', form_input_name);
+
+      form_label.textContent = form_input_name +': '+ form_input_value;
 
 
-function labelBuilder(){ 
-  console.log('labelBuilder');
-  var price__sale = parseInt(document.querySelector('.price__sale .price-item').textContent.replace("$", ""));
-  var cutoff_price = parseInt(document.querySelector('.cutoff_Price .price-item').textContent.replace("$", ""));
+    });
 
-  //console.log('price__sale: '+ price__sale);
-  //console.log('cutoff_price: '+ cutoff_price);
+  }
 
-  var disc_cal = cutoff_price / (price__sale * 100);
 
-  //console.log('disc_cal: '+ disc_cal);
 
-  var allfieldset = document.querySelectorAll('variant-selects fieldset');
-  allfieldset.forEach(function(fieldset){
-    var form_label = fieldset.querySelector('legend.form__label');
-    console.log('form_label: ', form_label);
-
-    var form_checked_input = fieldset.querySelector('input:checked');
-    var form_input_value = form_checked_input.value;
-    var form_input_name = form_checked_input.getAttribute('name');
-
-    //console.log('form_checked_input: ', form_input_value);
-    //console.log('form_input_name: ', form_input_name);
-
-    form_label.textContent = form_input_name +': '+ form_input_value;
-
-  });
 }

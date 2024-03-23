@@ -1,6 +1,4 @@
 if (!customElements.get('price-per-item')) {
-  console.log('price per tag connectedCallback');
-
   customElements.define(
     'price-per-item',
     class PricePerItem extends HTMLElement {
@@ -19,8 +17,6 @@ if (!customElements.get('price-per-item')) {
       variantIdChangedUnsubscriber = undefined;
 
       connectedCallback() {
-        console.log('price per tag connectedCallback');
-
         // Update variantId if variant is switched on product page
         this.variantIdChangedUnsubscriber = subscribe(PUB_SUB_EVENTS.variantChange, (event) => {
           this.variantId = event.data.variant.id.toString();
