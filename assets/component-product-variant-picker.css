@@ -112,7 +112,7 @@ variant-selects {
 }
 
 .product-form__input--pill label.variant_value_matte_black,
-.product-form__input--pill label.variant_value_silver
+.product-form__input--pill label.variant_value_silver,
 .product-form__input--pill label.variant_value_brown{
   width: 47.67px;
   height: 43px;
