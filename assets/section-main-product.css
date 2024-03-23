@@ -559,6 +559,10 @@ a.product__text {
     right: 0;
   }
 
+  .product:not(.product--columns) .thumbnail_media_gallery .product__media-item:first-child .product-media-container{
+    border:none !important;
+  }
+
   .product:not(.product--columns) .thumbnail_media_gallery .product__media-item {
     max-width: 156px;
     width: 156px;
