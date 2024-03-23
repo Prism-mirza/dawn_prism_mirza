@@ -92,11 +92,9 @@
           {%- 
             assign pricewocur1 = product.price | money_without_currency
          -%}
+
          {%- 
-            assign pricewocur2 = pricewocur1 | money_without_trailing_zeros
-        -%}
-         {%- 
-            assign voucherDiscount = 100 | minus: money_price
+            assign voucherDiscount = 100 | minus: pricewocur1
          -%}
          <span class="money_price">PC: {{ pricewocur2 }}</span>
 
