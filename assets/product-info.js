@@ -13,13 +13,6 @@ if (!customElements.get('product-info')) {
       variantChangeUnsubscriber = undefined;
 
       connectedCallback() {
-        var variant_selects = document.querySelectorAll('.variant-selects .fieldset label');
-variant_selects.forEach(function(vslabel){
-  vslabel.addEventListener('click', function(){
-    console.log('label clicked');
-  });
-});
-
         if (!this.input) return;
         this.quantityForm = this.querySelector('.product-form__quantity');
         if (!this.quantityForm) return;
