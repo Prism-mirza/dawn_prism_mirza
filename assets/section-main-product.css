@@ -18,6 +18,12 @@
 .oasis_voucher img{
   max-width: 100%;
 }
+
+.oasis_voucher_mobile{
+  margin-top: 53px;
+  display: block;
+}
+
 @media screen and (max-width: 750px) {
   .oasis_voucher_desktop{
     display:none;
