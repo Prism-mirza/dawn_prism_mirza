@@ -71,7 +71,7 @@
       <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
         {% render 'product-media-gallery', variant_images: variant_images %}
       
-        <a class="oasis_voucher" title="Oasis Voucher" href="#">
+        <a class="oasis_voucher oasis_voucher_desktop" title="Oasis Voucher" href="#">
           <img alt="oasis_voucher" src="https://cdn.shopify.com/s/files/1/0869/2875/2918/files/image_47.jpg?v=1711199514" />
         </a>
       </div>
@@ -659,7 +659,9 @@
         </div>
       {%- endif -%}
     </div>
-
+    <a class="oasis_voucher oasis_voucher_mobile" title="Oasis Voucher" href="#">
+      <img alt="oasis_voucher" src="https://cdn.shopify.com/s/files/1/0869/2875/2918/files/image_47.jpg?v=1711199514" />
+    </a>
     
     {% render 'product-media-modal', variant_images: variant_images %}
 

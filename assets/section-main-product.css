@@ -18,8 +18,16 @@
 .oasis_voucher img{
   max-width: 100%;
 }
+@media screen and (max-width: 750px) {
+  .oasis_voucher_desktop{
+    display:none;
+  }
+}
 
 @media screen and (min-width: 750px) {
+  .oasis_voucher_mobile{
+    display:none;
+  }
   .product__column-sticky {
     display: block;
     position: sticky;
