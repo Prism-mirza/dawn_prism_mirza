@@ -1531,10 +1531,13 @@ a.product__text {
   padding-top: 516px
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 991px) {
   .product__media-item:nth-child(1) .media{
     padding-top: 217px
   }
+}
+
+@media screen and (max-width: 749px) {
   .product-media-container.media-fit-cover {
     display: flex;
     align-self: stretch;
